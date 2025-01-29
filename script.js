@@ -1,3 +1,9 @@
+/*
+  Property of Peliah
+  GitHub: https://github.com/Peliah
+  Description: Script for the Neobrutalism-style profile card.
+*/
+
 // Simulate loading delay
 window.addEventListener('load', () => {
     setTimeout(() => {
@@ -16,9 +22,32 @@ function updateUTCTime() {
 setInterval(updateUTCTime, 1000);
 updateUTCTime(); // Initial call
 
-// Button interactivity
+// Toast Notification
 const profileButton = document.querySelector('.profile-button');
+const toast = document.getElementById('toast');
+const toastClose = toast.querySelector('.toast-close');
 
+// Show toast on button click
 profileButton.addEventListener('click', () => {
-    alert('Thanks for reaching out!');
+    showToast();
 });
+
+// Close toast on close button click
+toastClose.addEventListener('click', () => {
+    hideToast();
+});
+
+// Show toast function
+function showToast() {
+    toast.classList.add('show');
+
+    // Auto-hide after 3 seconds
+    setTimeout(() => {
+        hideToast();
+    }, 3000);
+}
+
+// Hide toast function
+function hideToast() {
+    toast.classList.remove('show');
+}

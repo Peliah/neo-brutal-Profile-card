@@ -1,16 +1,23 @@
+<!-- 
+  Property of Peliah
+  GitHub: https://github.com/Peliah
+  Description: Neobrutalism-style profile card with animations and interactive elements.
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neobrutalism Profile Card</title>
+    <title>Peliah | Profile Card</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Add Google Fonts -->
+    <!-- Custom Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@400;700&display=swap"
         rel="stylesheet">
-    <!-- Add FontAwesome for Icons -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -20,19 +27,23 @@
         <div class="loading-spinner"></div>
     </div>
 
-    <!-- Profile Card -->
     <div class="profile-card">
         <div class="profile-image">
-            <img src="https://play-lh.googleusercontent.com/bZFgLx_6xeI8Vhoj7m88uoDNrOA3afmqLC8D6lZBZG5uF1XBTDCsLmVSTK4ub0y75tU=w526-h296-rw"
-                alt="Profile Picture" data-testid="profilePicture">
+            <img src="https://i.postimg.cc/nLghGR57/1738178416925-1.jpg" alt="Profile Picture"
+                data-testid="profilePicture">
         </div>
         <div class="profile-info">
             <h1 class="profile-name" data-testid="fullName">Pelayah Epoupa</h1>
             <p class="profile-job-title" data-testid="jobTitle">Software Developer</p>
             <p class="profile-bio" data-testid="shortBio">
-                A passionate web developer with over 5 years of experience in building scalable and user-friendly
-                applications.
-                Loves solving complex problems, exploring new technologies, and contributing to open-source projects.
+                A seasoned Software Developer with over 3 years of experience specializing in front-end and back-end
+                development.
+                Proficient in JavaScript, React, Node.js, and modern web technologies. Passionate about creating
+                scalable, user-friendly
+                applications and solving complex problems.
+                <br>Enjoys contributing to open-source projects, mentoring junior
+                developers,
+                and staying updated with the latest industry trends.
             </p>
             <div class="profile-details">
                 <div class="detail">
@@ -58,6 +69,11 @@
         </div>
     </div>
 
+
+    <div id="toast" class="toast">
+        <span class="toast-message">Thanks for reaching out!</span>
+        <button class="toast-close">&times;</button>
+    </div>
     <script src="script.js"></script>
 </body>
 
