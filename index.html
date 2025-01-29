@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neobrutalism Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Add FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-animation">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230523/pngtree-an-anime-with-glasses-and-scarves-image_2694420.jpg"
+                alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h1 class="profile-name">John Doe</h1>
+            <p class="profile-job-title">Senior Web Developer</p>
+            <p class="profile-bio">
+                A passionate web developer with over 5 years of experience in building scalable and user-friendly
+                applications.
+                Loves solving complex problems, exploring new technologies, and contributing to open-source projects.
+            </p>
+            <div class="profile-details">
+                <div class="detail">
+                    <i class="fas fa-envelope"></i>
+                    <span>john.doe@example.com</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-clock"></i>
+                    <span id="current-time">Loading UTC time...</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <button class="profile-button">Contact Me</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
