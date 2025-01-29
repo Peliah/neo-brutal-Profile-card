@@ -1,6 +1,6 @@
 ### README.md
 
-```markdown
+
 # Neobrutalism Profile Card
 
 A modern and stylish profile card designed in the **Neobrutalism** style. This project features a clean, bold design with interactive elements, animations, and a toast notification system.
