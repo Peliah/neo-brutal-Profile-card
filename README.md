@@ -5,7 +5,7 @@
 
 A modern and stylish profile card designed in the **Neobrutalism** style. This project features a clean, bold design with interactive elements, animations, and a toast notification system.
 
-![Preview](preview.png) <!-- Add a screenshot of your project here -->
+![Preview](preview.png)
 
 ## Features
 
@@ -45,7 +45,7 @@ neobrutalism-profile-card/
 ├── styles.css          # CSS styles for the profile card
 ├── script.js           # JavaScript for dynamic functionality
 ├── README.md           # Project documentation
-└── preview.png         # Screenshot of the project (optional)
+└── preview.png         # Screenshot of the project
 ```
 
 ## How It Works
