@@ -23,13 +23,13 @@
     <!-- Profile Card -->
     <div class="profile-card">
         <div class="profile-image">
-            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230523/pngtree-an-anime-with-glasses-and-scarves-image_2694420.jpg"
-                alt="Profile Picture">
+            <img src="https://play-lh.googleusercontent.com/bZFgLx_6xeI8Vhoj7m88uoDNrOA3afmqLC8D6lZBZG5uF1XBTDCsLmVSTK4ub0y75tU=w526-h296-rw"
+                alt="Profile Picture" data-testid="profilePicture">
         </div>
         <div class="profile-info">
-            <h1 class="profile-name">John Doe</h1>
-            <p class="profile-job-title">Senior Web Developer</p>
-            <p class="profile-bio">
+            <h1 class="profile-name" data-testid="fullName">Pelayah Epoupa</h1>
+            <p class="profile-job-title" data-testid="jobTitle">Software Developer</p>
+            <p class="profile-bio" data-testid="shortBio">
                 A passionate web developer with over 5 years of experience in building scalable and user-friendly
                 applications.
                 Loves solving complex problems, exploring new technologies, and contributing to open-source projects.
@@ -37,17 +37,22 @@
             <div class="profile-details">
                 <div class="detail">
                     <i class="fas fa-envelope"></i>
-                    <span>john.doe@example.com</span>
+                    <span data-testid="emailAddress">pelepoupa@gmail.com</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-testid="currentLocation">Yaounde, Cameroon</span>
                 </div>
                 <div class="detail">
                     <i class="fas fa-clock"></i>
-                    <span id="current-time">Loading UTC time...</span>
+                    <span id="current-time" data-testid="currentTimeUTC">Loading UTC time...</span>
                 </div>
             </div>
             <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Peliah" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pelayah-epoupa-12830a198/" class="social-link"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/pelayah_epoupa" class="social-link"><i class="fab fa-twitter"></i></a>
             </div>
             <button class="profile-button">Contact Me</button>
         </div>
