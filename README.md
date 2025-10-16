@@ -2,10 +2,10 @@
 
 
 # Neobrutalism Profile Card
+<!-- ![Preview](preview.png) -->
+![Preview](preview.png)
 
 A modern and stylish profile card designed in the **Neobrutalism** style. This project features a clean, bold design with interactive elements, animations, and a toast notification system.
-
-![Preview](preview.png)
 
 ## Features
 
