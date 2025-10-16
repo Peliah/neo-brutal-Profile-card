@@ -1,6 +1,6 @@
 /*
-  Property of Peliah
-  GitHub: https://github.com/Peliah
+  Property of Dushane
+  GitHub: https://github.com/Dushane
   Description: Script for the Neobrutalism-style profile card.
 */
 

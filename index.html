@@ -1,6 +1,6 @@
 <!-- 
-  Property of Peliah
-  GitHub: https://github.com/Peliah
+  Property of Dushane
+  GitHub: https://github.com/Dushane
   Description: Neobrutalism-style profile card with animations and interactive elements.
 -->
 
@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliah | Profile Card</title>
+    <title>Dushane | Profile Card</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Custom Fonts -->
     <link
@@ -28,18 +28,21 @@
     </div>
 
     <div class="profile-card" data-testid="test-profile-card">
-        <div class="profile-image">
-            <img src="https://i.postimg.cc/nLghGR57/1738178416925-1.jpg" alt="Profile Picture"
-                data-testid="test-user-avatar">
+        <div class="profile-image-container">
+            <div class="profile-image">
+                <img src="https://i.postimg.cc/nLghGR57/1738178416925-1.jpg" alt="Profile Picture"
+                    data-testid="test-user-avatar">
+            </div>
+            <p class="profile-bio" data-testid="test-user-bio">
+                Hi hi!! I&apos;m Dushane. By day I&apos;m a Software Developer, by nature I&apos;m a creative
+                soul.<br />
+                Welcome to my little corner of the internet.
+            </p>
+
         </div>
         <div class="profile-info">
             <h1 class="profile-name" data-testid="test-user-name">Pelayah Epoupa</h1>
             <p class="profile-job-title" data-testid="test-user-job-title">Software Developer</p>
-            <p class="profile-bio" data-testid="test-user-bio">
-                Hi hi!! I&apos;m Peliah. By day I&apos;m a Software Developer, by nature I&apos;m a creative
-                soul.<br />
-                Welcome to my little corner of the internet.
-            </p>
             <div class="profile-details">
                 <div class="detail">
                     <i class="fas fa-envelope"></i>
@@ -55,7 +58,7 @@
                 </div>
             </div>
             <div class="social-links" data-testid="test-user-social-links">
-                <a href="https://github.com/Peliah" class="social-link" data-testid="test-user-social-github"><i
+                <a href="https://github.com/Dushane" class="social-link" data-testid="test-user-social-github"><i
                         class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/pelayah-epoupa-12830a198/" class="social-link"
                     data-testid="test-user-social-linkedin"><i class="fab fa-linkedin"></i></a>
@@ -63,24 +66,26 @@
                     data-testid="test-user-social-twitter"><i class="fab fa-twitter"></i></a>
             </div>
 
-            <div class="hobbies-section">
-                <h3>Hobbies</h3>
-                <ul data-testid="test-user-hobbies">
-                    <li>Coding</li>
-                    <li>Design</li>
-                    <li>Music</li>
-                    <li>Reading</li>
-                </ul>
-            </div>
+            <div class="hobbies-dislikes-container">
+                <div class="hobbies-section">
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Coding</li>
+                        <li>Design</li>
+                        <li>Music</li>
+                        <li>Reading</li>
+                    </ul>
+                </div>
 
-            <div class="dislikes-section">
-                <h3>Dislikes</h3>
-                <ul data-testid="test-user-dislikes">
-                    <li>Bugs in production</li>
-                    <li>Slow internet</li>
-                    <li>Cold Coffee</li>
-                    <li>Meetings without agendas</li>
-                </ul>
+                <div class="dislikes-section">
+                    <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Bugs in production</li>
+                        <li>Slow internet</li>
+                        <li>Cold Coffee</li>
+                        <li>Meetings without agendas</li>
+                    </ul>
+                </div>
             </div>
 
             <button class="profile-button">Contact Me</button>
