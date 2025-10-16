@@ -27,23 +27,18 @@
         <div class="loading-spinner"></div>
     </div>
 
-    <div class="profile-card">
+    <div class="profile-card" data-testid="test-profile-card">
         <div class="profile-image">
             <img src="https://i.postimg.cc/nLghGR57/1738178416925-1.jpg" alt="Profile Picture"
-                data-testid="profilePicture">
+                data-testid="test-user-avatar">
         </div>
         <div class="profile-info">
-            <h1 class="profile-name" data-testid="fullName">Pelayah Epoupa</h1>
-            <p class="profile-job-title" data-testid="jobTitle">Software Developer</p>
-            <p class="profile-bio" data-testid="shortBio">
-                A seasoned Software Developer with over 3 years of experience specializing in front-end and back-end
-                development.
-                Proficient in JavaScript, React, Node.js, and modern web technologies. Passionate about creating
-                scalable, user-friendly
-                applications and solving complex problems.
-                <br>Enjoys contributing to open-source projects, mentoring junior
-                developers,
-                and staying updated with the latest industry trends.
+            <h1 class="profile-name" data-testid="test-user-name">Pelayah Epoupa</h1>
+            <p class="profile-job-title" data-testid="test-user-job-title">Software Developer</p>
+            <p class="profile-bio" data-testid="test-user-bio">
+                Hi hi!! I&apos;m Peliah. By day I&apos;m a Software Developer, by nature I&apos;m a creative
+                soul.<br />
+                Welcome to my little corner of the internet.
             </p>
             <div class="profile-details">
                 <div class="detail">
@@ -56,17 +51,38 @@
                 </div>
                 <div class="detail">
                     <i class="fas fa-clock"></i>
-                    <span id="current-time" data-testid="currentTimeUTC">Loading UTC time...</span>
+                    <span id="current-time" data-testid="test-user-time">Loading UTC time...</span>
                 </div>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/Peliah" class="social-link" data-testid="socialLinks"><i
+            <div class="social-links" data-testid="test-user-social-links">
+                <a href="https://github.com/Peliah" class="social-link" data-testid="test-user-social-github"><i
                         class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/pelayah-epoupa-12830a198/" class="social-link"
-                    data-testid="socialLinks"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/pelayah_epoupa" class="social-link" data-testid="socialLinks"><i
-                        class="fab fa-twitter"></i></a>
+                    data-testid="test-user-social-linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/pelayah_epoupa" class="social-link"
+                    data-testid="test-user-social-twitter"><i class="fab fa-twitter"></i></a>
             </div>
+
+            <div class="hobbies-section">
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Design</li>
+                    <li>Music</li>
+                    <li>Reading</li>
+                </ul>
+            </div>
+
+            <div class="dislikes-section">
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Bugs in production</li>
+                    <li>Slow internet</li>
+                    <li>Cold Coffee</li>
+                    <li>Meetings without agendas</li>
+                </ul>
+            </div>
+
             <button class="profile-button">Contact Me</button>
         </div>
     </div>

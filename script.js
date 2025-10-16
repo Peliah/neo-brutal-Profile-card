@@ -11,11 +11,11 @@ window.addEventListener('load', () => {
     }, 1000); // Adjust the delay as needed
 });
 
-// Display current UTC time
+// Display current time in milliseconds
 function updateUTCTime() {
     const now = new Date();
-    const utcTime = now.toUTCString();
-    document.getElementById('current-time').textContent = utcTime;
+    const timeInMilliseconds = now.getTime();
+    document.getElementById('current-time').textContent = timeInMilliseconds;
 }
 
 // Update UTC time every second
