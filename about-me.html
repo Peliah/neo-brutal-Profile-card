@@ -1,0 +1,173 @@
+<!-- 
+  Property of Dushane
+  GitHub: https://github.com/Dushane
+  Description: About page with Neobrutalism-style design.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Dushane</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Custom Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-navigation" role="navigation" aria-label="Main navigation">
+        <div class="main-navigation-container">
+            <button class="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="dropdown-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="dropdown-menu" id="dropdown-menu" aria-hidden="true">
+                <li><a href="contact-me.html" class="menu-link">Contact Me</a></li>
+                <li><a href="about-me.html" class="menu-link">About Me</a></li>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Loading Animation -->
+    <div class="loading-animation">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <main class="page-container">
+        <article class="about-card">
+            <header class="about-header">
+                <figure class="about-image">
+                    <img src="https://i.postimg.cc/nLghGR57/1738178416925-1.jpg" alt="Profile Picture of Dushane">
+                    <figcaption class="sr-only">Profile picture of Dushane</figcaption>
+                </figure>
+                <div class="about-intro">
+                    <h1 class="page-title">About Dushane</h1>
+                    <p class="page-subtitle">Software Developer & Creative Soul</p>
+                </div>
+            </header>
+
+            <section class="about-content">
+                <div class="bio-section">
+                    <h2>My Story</h2>
+                    <p>
+                        Hi there! I'm Dushane, a passionate Software Developer based in Yaounde, Cameroon.
+                        By day, I craft digital solutions that solve real-world problems, and by nature,
+                        I'm a creative soul who loves bringing ideas to life through code.
+                    </p>
+                    <p>
+                        My journey in technology started with curiosity and has evolved into a deep passion
+                        for creating meaningful digital experiences. I believe in the power of technology
+                        to transform lives and businesses, and I'm always excited to work on projects
+                        that make a difference.
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h2>Skills & Expertise</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend Development</h3>
+                            <ul>
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>React & Vue.js</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend Development</h3>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>Database Design</li>
+                                <li>API Development</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools & Technologies</h3>
+                            <ul>
+                                <li>Git & GitHub</li>
+                                <li>Docker</li>
+                                <li>Cloud Platforms</li>
+                                <li>Agile Methodologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interests-section">
+                    <h2>What I Love</h2>
+                    <div class="interests-grid">
+                        <section class="interest-item">
+                            <h3>Hobbies</h3>
+                            <ul>
+                                <li>Coding</li>
+                                <li>Design</li>
+                                <li>Music</li>
+                                <li>Reading</li>
+                            </ul>
+                        </section>
+                        <section class="interest-item">
+                            <h3>Dislikes</h3>
+                            <ul>
+                                <li>My Ex-Girlfriend</li>
+                                <li>Slow internet</li>
+                                <li>Cold Coffee</li>
+                                <li>Meetings without agendas</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="values-section">
+                    <h2>My Values</h2>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                            <h3>Innovation</h3>
+                            <p>Always looking for creative solutions and new ways to approach problems.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <h3>Collaboration</h3>
+                            <p>Believe in the power of teamwork and building strong professional relationships.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            <h3>Growth</h3>
+                            <p>Continuously learning and evolving to stay at the forefront of technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Let's Work Together</h2>
+                <p>Ready to bring your ideas to life? I'd love to hear about your project!</p>
+                <div class="cta-buttons">
+                    <a href="contact-me.html" class="cta-button primary">Get In Touch</a>
+                    <a href="index.html" class="cta-button secondary">Back to Profile</a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+        <span class="toast-message">Thanks for visiting!</span>
+        <button class="toast-close" aria-label="Close notification">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
