@@ -43,7 +43,7 @@
         <div class="loading-spinner"></div>
     </div>
 
-    <main class="page-container">
+    <main class="page-container" data-testid="test-about-page">
         <article class="about-card">
             <header class="about-header">
                 <figure class="about-image">
@@ -57,8 +57,8 @@
             </header>
 
             <section class="about-content">
-                <div class="bio-section">
-                    <h2>My Story</h2>
+                <section class="bio-section" data-testid="test-about-bio">
+                    <h2>My Bio</h2>
                     <p>
                         Hi there! I'm Dushane, a passionate Software Developer based in Yaounde, Cameroon.
                         By day, I craft digital solutions that solve real-world problems, and by nature,
@@ -70,85 +70,106 @@
                         to transform lives and businesses, and I'm always excited to work on projects
                         that make a difference.
                     </p>
-                </div>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing to
+                        open-source projects, or sharing knowledge with the developer community. I'm
+                        constantly learning and growing, always eager to take on new challenges and
+                        expand my skill set.
+                    </p>
+                </section>
 
-                <div class="skills-section">
-                    <h2>Skills & Expertise</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Frontend Development</h3>
-                            <ul>
-                                <li>HTML5 & CSS3</li>
-                                <li>JavaScript (ES6+)</li>
-                                <li>React & Vue.js</li>
-                                <li>Responsive Design</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Backend Development</h3>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>Python</li>
-                                <li>Database Design</li>
-                                <li>API Development</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Tools & Technologies</h3>
-                            <ul>
-                                <li>Git & GitHub</li>
-                                <li>Docker</li>
-                                <li>Cloud Platforms</li>
-                                <li>Agile Methodologies</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <section class="goals-section" data-testid="test-about-goals">
+                    <h2>Goals in This Program</h2>
+                    <p>My primary objectives for this program are:</p>
+                    <ul>
+                        <li><strong>Master Advanced Web Technologies:</strong> Deepen my understanding of modern
+                            JavaScript frameworks, APIs, and full-stack development.</li>
+                        <li><strong>Build Real-World Projects:</strong> Create impactful applications that solve genuine
+                            problems and showcase my technical abilities.</li>
+                        <li><strong>Network and Collaborate:</strong> Connect with like-minded developers, mentors, and
+                            industry professionals to expand my professional network.</li>
+                        <li><strong>Improve Problem-Solving Skills:</strong> Enhance my ability to break down complex
+                            problems and design elegant solutions.</li>
+                        <li><strong>Gain Industry Experience:</strong> Learn best practices, industry standards, and
+                            professional development workflows.</li>
+                        <li><strong>Contribute to Open Source:</strong> Give back to the developer community through
+                            meaningful contributions and knowledge sharing.</li>
+                    </ul>
+                </section>
 
-                <div class="interests-section">
-                    <h2>What I Love</h2>
-                    <div class="interests-grid">
-                        <section class="interest-item">
-                            <h3>Hobbies</h3>
-                            <ul>
-                                <li>Coding</li>
-                                <li>Design</li>
-                                <li>Music</li>
-                                <li>Reading</li>
-                            </ul>
-                        </section>
-                        <section class="interest-item">
-                            <h3>Dislikes</h3>
-                            <ul>
-                                <li>My Ex-Girlfriend</li>
-                                <li>Slow internet</li>
-                                <li>Cold Coffee</li>
-                                <li>Meetings without agendas</li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
+                <section class="confidence-section" data-testid="test-about-confidence">
+                    <h2>Areas of Low Confidence</h2>
+                    <p>While I'm passionate about development, I recognize areas where I need to grow:</p>
+                    <ul>
+                        <li><strong>System Design:</strong> I sometimes struggle with designing scalable, distributed
+                            systems and making architectural decisions for large applications.</li>
+                        <li><strong>DevOps and Deployment:</strong> My experience with containerization, CI/CD
+                            pipelines, and cloud infrastructure management is still developing.</li>
+                        <li><strong>Performance Optimization:</strong> I want to improve my skills in identifying and
+                            resolving performance bottlenecks in web applications.</li>
+                        <li><strong>Security Best Practices:</strong> Understanding and implementing comprehensive
+                            security measures is an area I'm actively working to strengthen.</li>
+                        <li><strong>Team Leadership:</strong> While I enjoy collaboration, I'd like to develop stronger
+                            leadership skills for guiding technical teams.</li>
+                        <li><strong>Advanced Algorithms:</strong> Complex algorithmic problem-solving and data structure
+                            optimization are areas I'm continuously improving.</li>
+                    </ul>
+                </section>
 
-                <div class="values-section">
-                    <h2>My Values</h2>
-                    <div class="values-grid">
-                        <div class="value-item">
-                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
-                            <h3>Innovation</h3>
-                            <p>Always looking for creative solutions and new ways to approach problems.</p>
-                        </div>
-                        <div class="value-item">
-                            <i class="fas fa-users" aria-hidden="true"></i>
-                            <h3>Collaboration</h3>
-                            <p>Believe in the power of teamwork and building strong professional relationships.</p>
-                        </div>
-                        <div class="value-item">
-                            <i class="fas fa-rocket" aria-hidden="true"></i>
-                            <h3>Growth</h3>
-                            <p>Continuously learning and evolving to stay at the forefront of technology.</p>
-                        </div>
+                <section class="future-note-section" data-testid="test-about-future-note">
+                    <h2>Note to Future Self</h2>
+                    <div class="future-note-content">
+                        <p>
+                            <strong>Dear Future Dushane,</strong>
+                        </p>
+                        <p>
+                            As you read this, remember why you started this journey. You chose development not just as a
+                            career,
+                            but as a way to create meaningful impact through technology. Stay curious, stay hungry for
+                            knowledge,
+                            and never lose sight of the human element behind every line of code.
+                        </p>
+                        <p>
+                            Remember the challenges you faced and overcame. Each bug you debugged, each feature you
+                            built,
+                            and each problem you solved made you stronger. Trust in your ability to learn and adapt,
+                            because
+                            that's what got you here.
+                        </p>
+                        <p>
+                            Keep building bridges between technology and people. Your code has the power to change
+                            lives,
+                            so write it with intention, test it with care, and deploy it with confidence. Never stop
+                            learning,
+                            never stop growing, and always remember to help others along the way.
+                        </p>
+                        <p>
+                            <em>With determination and hope,<br>Present Dushane</em>
+                        </p>
                     </div>
-                </div>
+                </section>
+
+                <section class="extra-thoughts-section" data-testid="test-about-extra">
+                    <h2>Extra Thoughts</h2>
+                    <p>Some additional reflections and insights:</p>
+                    <ul>
+                        <li><strong>Technology as a Tool:</strong> I believe technology should serve humanity, not the
+                            other way around. Every project should have a clear purpose and positive impact.</li>
+                        <li><strong>Continuous Learning:</strong> The tech industry evolves rapidly, and I'm committed
+                            to being a lifelong learner. There's always something new to discover.</li>
+                        <li><strong>Community Matters:</strong> The developer community has been incredibly supportive.
+                            I want to pay that forward by mentoring others and contributing to open-source projects.
+                        </li>
+                        <li><strong>Work-Life Balance:</strong> While I'm passionate about coding, I also value time
+                            with family, friends, and personal hobbies. Balance is key to sustainable growth.</li>
+                        <li><strong>Ethical Development:</strong> I'm conscious of the ethical implications of
+                            technology and strive to build inclusive, accessible, and privacy-respecting applications.
+                        </li>
+                        <li><strong>Global Perspective:</strong> Coming from Cameroon, I bring a unique perspective to
+                            global tech challenges and am excited to contribute to solutions that work for diverse
+                            communities.</li>
+                    </ul>
+                </section>
             </section>
 
             <section class="cta-section">
