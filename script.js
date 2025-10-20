@@ -4,6 +4,45 @@
   Description: Script for the Neobrutalism-style profile card.
 */
 
+// Hamburger Menu Functionality
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+hamburgerMenu.addEventListener('click', () => {
+    const isExpanded = hamburgerMenu.getAttribute('aria-expanded') === 'true';
+
+    // Toggle menu visibility
+    hamburgerMenu.classList.toggle('active');
+    dropdownMenu.classList.toggle('show');
+
+    // Update ARIA attributes
+    hamburgerMenu.setAttribute('aria-expanded', !isExpanded);
+    dropdownMenu.setAttribute('aria-hidden', isExpanded);
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = hamburgerMenu.contains(event.target) || dropdownMenu.contains(event.target);
+
+    if (!isClickInsideMenu && dropdownMenu.classList.contains('show')) {
+        hamburgerMenu.classList.remove('active');
+        dropdownMenu.classList.remove('show');
+        hamburgerMenu.setAttribute('aria-expanded', 'false');
+        dropdownMenu.setAttribute('aria-hidden', 'true');
+    }
+});
+
+// Close menu on Escape key
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && dropdownMenu.classList.contains('show')) {
+        hamburgerMenu.classList.remove('active');
+        dropdownMenu.classList.remove('show');
+        hamburgerMenu.setAttribute('aria-expanded', 'false');
+        dropdownMenu.setAttribute('aria-hidden', 'true');
+        hamburgerMenu.focus();
+    }
+});
+
 // Simulate loading delay
 window.addEventListener('load', () => {
     setTimeout(() => {
