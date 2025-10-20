@@ -29,7 +29,8 @@ body {
     font-family: 'Space Mono', monospace;
     background-color: #f4f4f4;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     min-height: 100vh;
     padding: 20px;
@@ -39,10 +40,15 @@ body {
 
 /* Main Navigation */
 .main-navigation {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    display: flex;
+    width: 100%;
     z-index: 1001;
+}
+
+.main-navigation-container {
+    display: flex;
+    width: 100%;
+    justify-content: start;
 }
 
 .hamburger-menu {
