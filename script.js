@@ -90,3 +90,89 @@ function showToast() {
 function hideToast() {
     toast.classList.remove('show');
 }
+
+// Contact Form Validation (if contact form exists)
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Get form elements
+        const nameInput = document.getElementById('contact-name');
+        const emailInput = document.getElementById('contact-email');
+        const subjectInput = document.getElementById('contact-subject');
+        const messageInput = document.getElementById('contact-message');
+        const submitStatus = document.getElementById('contact-submit-status');
+
+        // Clear previous errors
+        clearFormErrors();
+
+        let isValid = true;
+
+        // Validate name (Full name required)
+        if (!nameInput.value.trim()) {
+            showFieldError('contact-name', 'Full name is required');
+            isValid = false;
+        }
+
+        // Validate email (must be valid format: name@example.com)
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailInput.value.trim()) {
+            showFieldError('contact-email', 'Email is required');
+            isValid = false;
+        } else if (!emailRegex.test(emailInput.value)) {
+            showFieldError('contact-email', 'Please enter a valid email address (name@example.com)');
+            isValid = false;
+        }
+
+        // Validate subject (required)
+        if (!subjectInput.value.trim()) {
+            showFieldError('contact-subject', 'Subject is required');
+            isValid = false;
+        }
+
+        // Validate message (required and at least 10 characters)
+        if (!messageInput.value.trim()) {
+            showFieldError('contact-message', 'Message is required');
+            isValid = false;
+        } else if (messageInput.value.trim().length < 10) {
+            showFieldError('contact-message', 'Message must be at least 10 characters long');
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Simulate form submission
+            submitStatus.textContent = 'Sending message...';
+            submitStatus.style.color = '#2c3e50';
+
+            setTimeout(() => {
+                submitStatus.textContent = 'Message sent successfully!';
+                submitStatus.style.color = '#27ae60';
+                contactForm.reset();
+
+                // Show toast notification
+                if (toast) {
+                    toast.querySelector('.toast-message').textContent = 'Message sent successfully!';
+                    showToast();
+                }
+            }, 1500);
+        } else {
+            submitStatus.textContent = 'Please fix the errors above';
+            submitStatus.style.color = '#e74c3c';
+        }
+    });
+}
+
+function showFieldError(fieldId, message) {
+    const errorElement = document.getElementById(fieldId.replace('contact-', 'contact-error-'));
+    if (errorElement) {
+        errorElement.textContent = message;
+    }
+}
+
+function clearFormErrors() {
+    const errorElements = document.querySelectorAll('.form-error');
+    errorElements.forEach(element => {
+        element.textContent = '';
+    });
+}
